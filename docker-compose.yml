@@ -3,8 +3,6 @@ services:
   worker:
     build: .
     environment:
-     
-      
       STRING: $STRING
       API_ID: $API_ID  # defaults to None
       API_HASH: $API_HASH  # defaults to None
