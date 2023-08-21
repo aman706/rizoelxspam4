@@ -3,7 +3,6 @@ services:
   worker:
     build: .
     environment:
-      
       API_ID: 1747534  # defaults to None
       API_HASH: 5a2684512006853f2e48aca9652d83ea  # defaults to None
        BOT_TOKEN: 6305926520:AAFG2ctGwNSQrBCfCz6_mYejDlFG5RiYUBA
