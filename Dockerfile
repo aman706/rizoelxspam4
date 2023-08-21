@@ -9,7 +9,7 @@ FROM aman706/RiZoelXSpam:main
 ENV TZ=Asia/Kolkata
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-COPY  root/startup/run.py
+COPY  "root/startup/run.py"
 
 RUN python3 run.py
 
