@@ -9,12 +9,12 @@ FROM aman706/RiZoelXSpam:main
 ENV TZ=Asia/Kolkata
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-COPY  startup/run.py
+COPY run.py .
 
-RUN python3 run.py
+RUN pythin run.py
 
 # changing workdir
-WORKDIR "/root/startup"
+WORKDIR "/root/TeamUltroid"
 
 # start the bot.
 CMD ["bash", "startup"]
